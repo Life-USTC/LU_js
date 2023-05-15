@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "inputs": [
+        {
+            "name": "username",
+            "input_type": "textfield"
+        },
+        {
+            "name": "password",
+            "input_type": "textfield",
+            "is_password": true
+        },
+        {
+            "name": "user_type",
+            "input_type": "textfield",
+            "options": [
+                "graduate",
+                "undergraduate"
+            ]
+        }
+    ],
+    "functions_supported": [
+        "course_table",
+        "score_list",
+        "classroom_query"
+    ],
+    "urls": [
+        "jw.ustc.edu.cn",
+        "passport.ustc.edu.cn",
+        "www.teach.ustc.edu.cn"
+    ]
+}

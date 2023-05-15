@@ -1,0 +1,59 @@
+{
+    "title": "LU_js declare schema",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "inputs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "name",
+                    "input_type"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "input_type": {
+                        "type": "string",
+                        "enum": [
+                            "textfield",
+                            "textarea",
+                            "picker",
+                            "enum_picker",
+                            "checkbox"
+                        ]
+                    },
+                    "is_password": {
+                        "type": "boolean"
+                    },
+                    "default_value": {
+                        "type": "string"
+                    },
+                    "options": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "functions_supported": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "urls": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
